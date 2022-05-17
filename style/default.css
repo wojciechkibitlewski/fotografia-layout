@@ -24,10 +24,25 @@ figure{
 }
 
 #splash {
-    background-color: beige;
+    background-image: url("https://agnieszkamandal.com/wp-content/uploads/2021/11/splash_1920_3.jpg");
+    height: 90vh; 
+    background-position: center;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
 }
 
-#portfolio, #blog, #footerDiv {
+#splash img {
+    display: flex;
+    max-width: 400px;
+    margin-bottom: -2px;
+  
+}
+
+ #portfolio, #blog, #footerDiv {
     max-width: 1200px;
     margin: auto;
     text-align: center;
@@ -45,7 +60,6 @@ figure{
 .card {
     width: 32%;
     text-align: center;
-    overflow: hidden;
     margin-bottom: 20px;
 
 }
@@ -55,6 +69,7 @@ figure{
 }
 .card-link {
     font-size: 22pt;
+    line-height: 24pt;
     text-decoration: none;
     color: #000;
 }
@@ -66,6 +81,7 @@ figure{
     background-color:#CFBCAE;
     text-decoration: none;
     font-weight: bolder;
+    font-size: 1em;
     color: #fff;
     padding: 15px 30px;
     margin: 20px;
@@ -104,12 +120,16 @@ footer {
 #footerDiv {
     padding: 20px 0px;
 }
+#footerDiv strong {
+    font-weight: 400;
+}
 #footerDiv p, a, address, dl {
     color: #fff;
-    font-size: 12pt;
+    font-size: 11pt;
     line-height: 16pt;
     font-style: normal;
 }
+
 #footerDiv dt {
     margin-bottom: 5px;
 }
@@ -127,12 +147,31 @@ footer {
     font-size: 11pt;
     text-transform: uppercase;
 }
+#footerDiv ul {
+    list-style: none;
+    padding: 0; margin: 0;
+}
+#footerDiv ul li {
+    margin: 5px 0px;
+}
+
+#blog h2 {
+    margin-bottom: 20px;
+}
+
+
 
 
 @media only screen and (max-width: 576px) {
     /* For mobile phones: */
     h2 {
         font-size: 32pt;
+    }
+    #splash {
+        background-image: url("https://agnieszkamandal.com/wp-content/uploads/2021/11/splash_400_2.jpg");
+        height: 70vh; 
+        background-position: center;
+        background-size: cover;
     }
     #portfolio, #blog, #footerDiv {
       width: 100%;
@@ -171,6 +210,9 @@ footer {
     font-size: 22pt;
     line-height: 1.3em;
     width: 100%
-
-}
+    }
+    #footerDiv .card {
+        width: 46%;
+        
+    }
 }
