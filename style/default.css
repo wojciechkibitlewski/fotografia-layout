@@ -145,7 +145,7 @@ header{
   
 }
 
- #portfolio, #blog, #footerDiv, #contact {
+ #portfolio, #blog, #footerDiv, #contact, #offer {
     max-width: 1200px;
     margin: auto;
     text-align: center;
@@ -236,12 +236,59 @@ header{
 
 
 
+.flex-cards-offer{
+
+}
+.card-offer{
+    width: 48%;
+    text-align: left;
+    margin-bottom: 25px;
+    box-shadow: 0 0 0.6em rgb(0 0 0 / 20%)
+}
+.cards-offer-body {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+}
+.offer-body{
+    width: 70%;
+
+}
+.offer-buy {
+    width: 30%;
+    text-align: right;
+
+}
+.offer-nad {
+    color: #666;
+    text-transform: uppercase;
+}
+.card-offer-link {
+    font-size: 18pt;
+    line-height: 24pt;
+    text-decoration: none;
+    color: #000;
+    margin-top: 0px;
+    display: block;
+}
+.offer-price {
+    font-size: 16pt;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.offer-buy-link {
+    padding: 10px;
+    background-color: #857367;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
 
 
 #portfolio p {
     text-transform: uppercase;
 }
-.flex-cards {
+.flex-cards, .flex-cards-offer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -253,11 +300,11 @@ header{
     margin-bottom: 20px;
 
 }
-.card img{
+.card img, .card-offer img{
     width: 100%;
     margin-bottom: 10px;
 }
-.card-link {
+.card-link{
     font-size: 22pt;
     line-height: 24pt;
     text-decoration: none;
@@ -271,7 +318,7 @@ header{
 }
 
 .more {
-    background-color: #7D4F73D4;
+    background-color: #857367;
     text-decoration: none;
     font-weight: 400;
     font-size: 1em;
