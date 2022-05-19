@@ -14,7 +14,7 @@ body {
     color: #333;
 }
 h1, h2, h3 {
-    text-align: center;
+    text-align: left;
     font-weight: 300;
     margin-bottom: 0px;
 }
@@ -42,7 +42,15 @@ header{
     top: 0;
     width: 100%;
 }
-
+#portfolio, #blog, #offer h1 {
+    text-align: center;
+}
+#portfolio, #blog, #offer h2 {
+    text-align: center;
+}
+#portfolio, #blog, #offer h3 {
+    text-align: center;
+}
 .logo {
     display: inline-block;
     margin: 5px;
@@ -145,18 +153,19 @@ header{
   
 }
 
- #portfolio, #blog, #footerDiv, #contact, #offer {
+#portfolio, #blog, #footerDiv, #contact, #offer, #offerDetail {
     max-width: 1200px;
     margin: auto;
-    text-align: center;
     margin-top: 40px;
 }
-
-
-#contact {
+#portfolio, #blog {
+    text-align: center;
+}
+#footerDiv, #contact, #offer {
     text-align: left;
     padding: 0px 20px;
 }
+
 #contact h1 { 
     text-align: left;
 }
@@ -282,6 +291,74 @@ header{
     text-decoration: none;
     border-radius: 5px;
     padding: 10px 25px;
+}
+
+
+.card-offer-detail{
+    width: 48%;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.card-offer-detail h1{
+    font-size: 26pt;
+    font-weight: bold;
+}
+.offer-price-detail {
+    font-size: 26px;
+    color: #999;
+    margin-top: 20px;
+}
+.box-shadow {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 3em rgb(0 0 0 / 10%)
+}
+.tabs {
+    display: flex;
+}
+.tabs li {
+    background-color: #fff;
+    padding:20px 20px;
+    margin: 0;
+}
+.tabs li.active {
+    border: 1px solid #d4d4d4;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+}
+
+
+.tabs a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+}
+
+.tabContent {
+    padding: 20px;
+    margin: 0;
+    border: 1px solid #d4d4d4;
+    display: none;
+}
+.tabContent.active {
+   display: block;
+}
+.tabContent p {
+    margin-bottom: 15px;
+}
+.tabContent ul {
+    list-style:disc;
+    padding-left: 40px;
+}
+.tabContent a {
+    color:steelblue;
+    font-weight: bold;
+    text-decoration:underline;
+    margin-bottom: 10px;
+    display: block;
 }
 
 
