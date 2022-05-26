@@ -245,9 +245,7 @@ header{
 
 
 
-.flex-cards-offer{
 
-}
 .card-offer{
     width: 48%;
     text-align: left;
@@ -292,7 +290,13 @@ header{
     border-radius: 5px;
     padding: 10px 25px;
 }
-
+.red {
+    background-color: #d9534f !important;
+}
+.red i {
+    margin-left: 5px;
+    
+}
 
 .card-offer-detail{
     width: 48%;
@@ -308,6 +312,80 @@ header{
     color: #999;
     margin-top: 20px;
 }
+
+/* carousel */
+.image-carousel {
+    width: 100%;
+}
+
+
+.swiper-container {
+    width: 100%;
+    overflow:hidden;
+    margin-bottom: 5px;
+    position: relative;
+    
+}
+.ratio-16-10 {
+    aspect-ratio: 16 / 10;
+}
+.swiper-slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 750ms ease-in-out;
+}
+.swiper-slide.hidden {
+    display: none;
+    opacity: 0;
+}
+.swiper-slide.active {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 2s;
+    
+}
+.swiper-slide-image {
+    width: 100%;
+}
+
+.swiper-navigation{
+    
+    text-align: center;
+}
+.swiper-navigation i {
+    padding: 0 5px;
+    font-size: 9pt;
+}
+.swiper-navigation i.dark {
+    color: #aaa;
+}
+.swiper-navigation i.light{
+    color: #eee;
+}
+.swiper-buttons-container{
+    position:absolute;
+    top:50%;
+    width: 100%;
+    
+}
+.swiper-buttons {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+.swiper-buttons div {
+    width: 20px;    
+}
+
+.fa-angle-left, .fa-angle-right {
+    text-shadow: 2px 2px 4px #666;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16pt;
+}
+
+
 .box-shadow {
     padding: 20px;
     margin-bottom: 20px;
@@ -315,52 +393,128 @@ header{
 }
 .tabs {
     display: flex;
+    list-style: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-.tabs li {
-    background-color: #fff;
-    padding:20px 20px;
-    margin: 0;
-}
-.tabs li.active {
-    border: 1px solid #d4d4d4;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom: 1px solid #fff;
+.tab-link {
+    display: block;
+    padding: 10px 40px;
     margin-bottom: -1px;
-}
-
-
-.tabs a {
-    color: #000;
-    font-weight: bold;
+    cursor: pointer;
     text-decoration: none;
-    margin: 0;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.tab-link.active {
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+    /* animation: fadeIn 0.3s; */
 }
 
-.tabContent {
+.tab-body {
     padding: 20px;
-    margin: 0;
-    border: 1px solid #d4d4d4;
+    border: 1px solid #ccc;
+/*     animation: fadeIn 0.5s;
+ */    
+
+}
+.tab-body.hidden {
     display: none;
 }
-.tabContent.active {
-   display: block;
-}
-.tabContent p {
-    margin-bottom: 15px;
-}
-.tabContent ul {
+.tab-body ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
     list-style:disc;
-    padding-left: 40px;
 }
-.tabContent a {
-    color:steelblue;
-    font-weight: bold;
-    text-decoration:underline;
+.tab-body p {
     margin-bottom: 10px;
+}
+.tab-body a {
     display: block;
+    color: darkcyan;
+    padding: 5px 0;
 }
 
+@keyframes fadeIn {
+    from {
+     opacity: 0;
+    }
+    to {
+      opacity: 1;
+      transition: opacity 750ms ease-in-out;
+    
+    }
+  }
+
+.offer-reservation,
+.flex-cards-offer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.offer-reservation div {
+    padding: 20px;
+    width: 50%;
+
+}
+.offer-important {
+    font-size: 11pt;
+}
+.offer-important h3 {
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.offer-contact {
+    background-color: #eee;
+}
+.offer-contact label {
+    display: block;
+    font-size: 12pt;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.offer-contact span {
+    color: red;
+}
+.offer-contact input {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-color: #ccc;
+    border-radius: 3px;
+    
+    font-size: 12pt;
+}
+input[type=text]:focus {
+    border: 1px solid #555;
+  }
+.offer-contact textarea {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-color: #ccc;
+    border-radius: 3px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 12pt;
+}
+.offer-contact .body {
+    cursor: pointer;
+    
+}
+.info {
+    font-size: 9pt;
+    font-style: italic;
+}
 
 #portfolio p {
     text-transform: uppercase;
@@ -518,6 +672,22 @@ footer {
         width: 100%;
         overflow: hidden;
     }
+    .tab-link {
+        padding: 10px 15px;
+    }
+    .offer-reservation div,
+    .card-offer-detail {
+        width: 100%;
+        padding: 10px;
+    
+    }
+    .offer-contact input, 
+    .offer-contact textarea {
+        width: 96%;
+        
+    }
+    
+    
 }
 
 @media only screen and (min-width: 577px) and (max-width: 1020px) {

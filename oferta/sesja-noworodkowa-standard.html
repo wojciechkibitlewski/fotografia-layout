@@ -49,35 +49,86 @@
         <article id="offerDetail">
             <div class="flex-cards-offer">
                 <div class="card-offer-detail">
+                    <!-- galeria -->
+                    <div class="image-carousel">
+                        <div class="swiper-container ratio-16-10">
+                            <div class="swiper-slide active" id="a">
+                                <figure class="swiper-slide-inner">
+                                    <img src="https://agnieszkamandal.com/wp-content/uploads/2021/07/katowice-fotografia-noworodkowa-25-768x518.jpg" alt="" class="swiper-slide-image">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide"  id="b">
+                                <figure class="swiper-slide-inner">
+                                    <img src="https://agnieszkamandal.com/wp-content/uploads/2021/07/katowice-fotografia-noworodkowa-34-768x512.jpg" alt="" class="swiper-slide-image">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide"  id="c">
+                                <figure class="swiper-slide-inner">
+                                    <img src="https://agnieszkamandal.com/wp-content/uploads/2021/07/katowice-fotografia-noworodkowa-35-768x512.jpg" alt="" class="swiper-slide-image">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide"  id="d">
+                                <figure class="swiper-slide-inner">
+                                    <img src="https://agnieszkamandal.com/wp-content/uploads/2021/07/katowice-fotografia-noworodkowa-22-768x512.jpg" alt="" class="swiper-slide-image">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide"  id="e">
+                                <figure class="swiper-slide-inner">
+                                    <img src="https://agnieszkamandal.com/wp-content/uploads/2021/07/katowice-fotografia-noworodkowa-15-768x512.jpg" alt="" class="swiper-slide-image">
+                                </figure>
+                            </div>
+                            <div class="swiper-buttons-container">
+                                <div class="swiper-buttons">
+                                    <div>
+                                        <i class="fa-solid fa-angle-left"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-navigation">
+                            <i class="fa-solid fa-circle light"></i>
+                            <i class="fa-solid fa-circle dark"></i>
+                            <i class="fa-solid fa-circle dark"></i>
+                            <i class="fa-solid fa-circle dark"></i>
+                            <i class="fa-solid fa-circle dark"></i>
+                        </div>
+                        
+                    </div>
+                    
 
                 </div>
                 <div  class="card-offer-detail">
                     <p>Sesje fotograficzne / Sesja noworodkowa</p>
                     <h1>Sesja noworodkowa. Pakiet Standard</h1>
                     <p class="offer-price-detail">800,00 zł</p>
+                    <a class="more red" href="#offer-contact">Zarezerwuj <i class="fa-regular fa-circle-down"></i></a>
                 </div>
             </div>
             
-            <div class="box-shadow">
+            <div class="box-shadow container">
                 <!-- tab links -->
-                <ul class="tabs">
-                    <li class="tab-links active" data-id="descript"><a href="#" >Opis sesji</a></li>
-                    <li class="tab-links" data-id="addOption"><a href="#">Opcje dodatkowe</a></li>
-                    <li class="tab-links" data-id="seeMore"><a href="#">Zobacz także</a></li>
+                <ul class="tabs" aria-label="nawigacja">
+                    <li class="tab-link active" data-tabs="1" >
+                        Opis sesji
+                    </li>
+                    <li class="tab-link"  data-tabs="2">
+                        Opcje dodatkowe
+                    </li>
+                    <li class="tab-link" data-tabs="3" >
+                        Zobacz także
+                    </li>
                 </ul>
-                <!-- 
-                <div class="tabs">
-                    <button id="descriptTab" class="active">Opis sesji</button>
-                    <button id="addOptionTab" class="">Opcje dodatkowe</button>
-                    <button id="seeMoreTab" class="">Zobacz także</button>
-                </div>
-                -->
+                
 
                 <!-- tab content -->
-                <div id="descript" class="tabContent active">
+                <div class="tab-body" id="1">
                     <p>Na sesję noworodkową zapraszam Maluszki do 14 dnia życia. Sesja odbywa się w naszym studiu w Katowicach Podlesiu. Przed sesją proszę Was zawsze o określenie Waszych preferencji (ulubione kolory, stylizacje). Dzięki temu mogę przygotować dla Was wyjątkową aranżację.</p>
                     <p>W trakcie sesji wykonujemy zdjęcia pozowane samego Maluszka oraz zdjęcia rodzinne z rodzicami, rodzeństwem i/lub psem. Możemy również skupić się tylko na ujęciach rodzinnych.</p>
-                    <p>Oferta obejmuje:</p>
+                    <p> <strong>Oferta obejmuje:</strong></p>
                         <ul>
                             <li><strong>20 najlepszych fotografii </strong> – wybranych przez Klienta – poddanych pełnej, autorskiej obróbce graficznej oraz retuszowi</li>
                             <li>2-3 stylizacje noworodka plus ujęcia rodzinne</li>
@@ -87,7 +138,7 @@
                         </ul>
                     
                 </div>
-                <div id="addOption" class="tabContent">
+                <div class="tab-body hidden" id="2">
                     <ul>
                         <li>dodatkowe zdjęcie – powyżej 20 – 40,00 zł</li>
                         <li>fotoksiążka (na 20 zdjęć, w formacie 20×20 cm, 20 stron) lub album tradycyjny na 20 zdjęć – od 150,00 zł </li>
@@ -100,15 +151,15 @@
                     <p><strong>Oferta obowiązuje od dnia 24 maja 2021</strong></p>
                 </div>
 
-                <div id="seeMore" class="tabContent">
+                <div class="tab-body hidden" id="3">
                     <a href="#" title="Portfolio. Fotografia noworodkowa pozowana">Portfolio. Fotografia noworodkowa pozowana</a>
                     <a href="#" title="Portfolio. Fotografia noworodkowa „life style”">Portfolio. Fotografia noworodkowa „life style”</a>
                 </div>
             </div>
 
 
-            <div>
-                <div>
+            <div class="offer-reservation">
+                <div class="offer-important">
                     <h2>Ważne informacje:</h2>
                     <h3>KIEDY WYKONAĆ SESJĘ NOWORODKOWĄ?</h3>
                     <p>Najlepszym momentem na sesję noworodkową i spotkanie z fotografem noworodkowym są pierwsze dni życia Malucha. W naszym studio fotograficznym sesje noworodkowe wykonujemy do 14 dnia po porodzie (w przypadku sesji typu „life style” dziecko może być starsze). Dlaczego tak wcześnie? Przez pierwsze dwa tygodnie Twoje dziecko jest spokojne i zwykle (!) przesypia całą sesję (z przerwami na karmienie i przewijanie). Dzięki temu uda nam się wykonać piękne pamiątkowe fotografie a sesja przebiega szybko i sprawnie. <br><br>
@@ -124,7 +175,7 @@
                     <p>Oczywiście rodzice, rodzeństwo czy też Wasz zwierzak. Musicie jednak brać pod uwagę, że sesja czasami może się przedłużyć. Dlatego sugerujemy, aby na początku był sam Maluch z mamą (zdjęcia układane) a później by dojechało rodzeństwo. Jeśli nie masz takiej możliwości – znajdziemy rozwiązanie, aby sesja przebiegała sprawnie i komfortowo dla najmłodszego modela.
                     </p>
                 </div>
-                <div>
+                <div class="offer-contact" id="offer-contact">
                     <h2>Zarezerwuj sesję:</h2>
                     <form action="#" method="post">
                         <label for="sesja">Sesja <span>*</span></label>
@@ -141,7 +192,7 @@
                         <textarea name="message" id="message" cols="30" rows="10" class="">
 
                         </textarea>
-                        <input type="button" class="" id="send" value="Rezerwuję!">
+                        <input type="button" class="more" id="send" value="Rezerwuję!">
                     </form>
                     <p class="info">
                         Wysyłając wiadomość wyrażasz zgodę na przetwarzanie danych osobowych zgodnie z Ustawą o ochronie danych osobowych w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie przez Ciebie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Przysługuje Ci prawo dostępu do swoich danych, możliwości ich poprawienia lub żądania zaprzestania ich przetwarzania.
@@ -227,49 +278,7 @@ Administratorem danych osobowych jest firma Fotografia Agnieszka Mandal z siedzi
             </div>
         </div>
     </footer>
-    <script>
-        var tabLinks = document.querySelectorAll(".tab-links");
-        var tabLinksN = document.getElementsByClassName("tab-links");
-        var tabContent = document.querySelectorAll(".tabContent");
-        console.log(tabLinks);
-        
-        tabLinks.addEventListener("click", function() {
-            console.log("Kliknąłem na element A");
-        });
-        * for (const lnk of tabLinks) {
-            console.log(lnk);
-        }
-        /*
-        for (const lnkn of tabLinksN) {
-            console.log(lnkn);
-        } */
-        /* tabLinks.onclick = e =>{
-            //id = e.target.dataset.id;
-            console.log(e);
-        }; */
-
-        /* tabLinks.onclick = e =>{
-            id = e.target.dataset.id;
-            console.log(id);
-        };
- */
-        /* tabLinks.forEach(el => {
-            id = el.target.dataset.id;
-            console.log(id);
-            
-           
-        }); */
-
-        /* tabLinks.forEach(el => {
-            console.log(el);
-            el.onclick = openTab(el);
-        });
-        //tabLinks.onclick = openTab();
-
-        function openTab(el){
-            el.classList.add("active");
-        }  */
-    
-    </script>
+    <script src="../js/navtab.js"></script>
+    <script src="../js/carousel.js"></script>
 </body>
 </html>
